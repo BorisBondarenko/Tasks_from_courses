@@ -1,7 +1,12 @@
 dig = int(input())
-_3 = dig % 10
-_2 = (dig // 10) % 10
-_1 = dig // 100
 
-print(f'Сумма цифр = {sum([_1,_2,_3])}')
-print(f'Произведение цифр = {_1 * _2 * _3}')
+a = dig // 100
+b = (dig // 10) % 10
+c = dig % 10
+
+print(a, b, c, sep='')
+print(a, c, b, sep='')
+print(b, a, c, sep='')
+print(b, c, a, sep='')
+print(c, a, b, sep='')
+print(c, b, a, sep='')
