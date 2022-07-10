@@ -28,12 +28,8 @@ class Complex:
         self.real = real
         self.img = img
 
-    def __repr__(self):
-        return self.real, self.img
-
-
-def abs(obj) -> Complex:
-    return sqrt(pow(obj.real, 2) + pow(obj.img, 2))
+    def __abs__(self):
+        return sqrt(pow(self.real, 2) + pow(self.img, 2))
 
 
 cmp = Complex(7, 8)
