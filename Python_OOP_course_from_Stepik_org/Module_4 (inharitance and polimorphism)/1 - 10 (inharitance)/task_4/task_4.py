@@ -18,13 +18,3 @@ class Game(Singleton):
     def __init__(self, name):
         old_name = getattr(self, 'name', False)
         self.name = old_name if old_name else name
-
-
-g_1 = Game('boris')
-g_2 = Game('igor')
-
-print(g_1.name)
-print(g_2.name)
-
-print(id(g_1))
-print(id(g_2))
